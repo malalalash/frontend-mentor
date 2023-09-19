@@ -21,7 +21,6 @@ const map = document.getElementById("map");
 
 fetch("data.json").then((res) => {
   res.json().then((data) => {
-    console.log(data);
     data.map((el) => {
       const wrapper = document.createElement("div");
       wrapper.classList.add("container");
